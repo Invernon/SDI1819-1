@@ -1,0 +1,26 @@
+.dashboard{
+    margin: 0 auto;
+    width: 80vw;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr );
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:991px){
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr );
+    }
+}
+
+@media (max-width:540px){
+    .grid-wrapper{
+        display: grid;
+        grid-template-columns: repeat(1 , 1fr );
+    }
+}

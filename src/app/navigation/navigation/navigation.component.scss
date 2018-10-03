@@ -1,0 +1,25 @@
+.main-container{
+    background: #1e1e1e;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.navbar{
+    height: 80px;
+    width: 100%;
+    color:white;
+    background: slategray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    span{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: large;
+    }
+}

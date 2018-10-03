@@ -1,0 +1,13 @@
+<div class="thumbnail-wrapper" [ngStyle]="{ 'background-image' : 'url('+album.image+')' }" (click)="toggleSongs()"
+(mouseleave)="songsFalse()"
+>
+  <div class="album-info"  *ngIf="!showSongs">
+    <span class="album-title"> <strong> Album:  </strong>{{ album.album }} </span>
+    <span class="album-author"> <strong> Autor: </strong> {{ album.author }} </span>
+    <span class="album-gender"> <strong> Género:  </strong>{{ album.gender }} </span>
+  </div>
+  <div class="album-songs" *ngIf="showSongs" >
+    <span *ngFor="let song of album.songs; let i = index"> {{i+1}}) {{song.title}} </span>
+  </div>
+
+</div>
