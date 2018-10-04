@@ -7,7 +7,7 @@
     <span class="album-gender"> <strong> Género:  </strong>{{ album.gender }} </span>
   </div>
   <div class="album-songs" *ngIf="showSongs" >
-    <span *ngFor="let song of album.songs; let i = index"> {{i+1}}) {{song.title}} </span>
+    <span *ngFor="let song of album.songs; let i = index"> {{i+1}}) {{song.title}} - {{song.duration}}</span>
   </div>
 
 </div>

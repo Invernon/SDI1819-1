@@ -9,10 +9,10 @@ import { AlbumsService } from '../../services/albums.service';
 export class HomeComponent implements OnInit {
 
   public albums = []
-  constructor(     private albumService: AlbumsService ) {
+  constructor( private albumService: AlbumsService ) {
 
     this.albums = albumService.getAll();
-    console.log(this.albums , "AD")
+
    }
 
   ngOnInit() {
